@@ -13,6 +13,7 @@ class ProofFactory extends Factory
         return [
             'title' => $title,
             'slug' => str($title)->slug(),
+            'body' => '<p>' . collect(fake()->paragraphs(6))->join('</p><p>') . '</p>',
         ];
     }
 }
