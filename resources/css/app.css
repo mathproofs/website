@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.katex-html {
+    @apply text-xl text-left text-black;
+}
