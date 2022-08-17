@@ -8,5 +8,5 @@ Route::get('/', function () {
 });
 
 Route::get('/proofs/{proof:slug}', function (Proof $proof) {
-    return $proof->title;
+    return view('proofs.show', ['proof' => $proof]);
 })->name('proofs.show');
