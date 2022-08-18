@@ -42,7 +42,11 @@
 
                     @if($proofs->count() > 0)
                         <div class="p-10 bg-white rounded-lg shadow">
-                            <h4 class="mb-4 text-2xl font-medium text-yellow-700">{{ $category->name() }}</h4>
+                            <h4 class="mb-4 text-2xl font-medium text-yellow-700">
+                                <a class="hover:underline" href="{{ route('proofs.index', ['category' => $category->value]) }}">
+                                    {{ $category->name() }}
+                                </a>
+                            </h4>
 
                             <ul class="space-y-3">
                                 @foreach ($proofs->limit(3)->get() as $proof)
@@ -52,7 +56,9 @@
 
                             @if($proofs->count() - 3 > 0)
                                 <p class="mt-4">
-                                    <a href="#" class="font-light text-yellow-800 hover:underline">{{ $proofs->count() - 3 }} more proofs</a>
+                                    <a href="{{ route('proofs.index', ['category' => $category->value]) }}" class="font-light text-yellow-800 hover:underline">
+                                        {{ $proofs->count() - 3 }} more proofs
+                                    </a>
                                 </p>
                             @endif
                         </div>
