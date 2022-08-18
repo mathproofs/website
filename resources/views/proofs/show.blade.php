@@ -18,4 +18,6 @@
             {!! $proof->body !!}
         </div>
     </x-container>
+
+    <x-footer />
 </x-layout>

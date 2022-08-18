@@ -64,9 +64,5 @@
     </div>
 
     <!-- Footer -->
-    <footer class="my-12">
-        <x-container>
-            <p>&copy; {{ date('Y') }} by <a class="hover:underline" href="{{ route('home') }}">{{ config('app.name') }}</a></p>
-        </x-container>
-    </footer>
+    <x-footer />
 </x-layout>

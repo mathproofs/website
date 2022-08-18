@@ -10,4 +10,6 @@
             @endforeach
         </ul>
     </x-container>
+
+    <x-footer />
 </x-layout>
