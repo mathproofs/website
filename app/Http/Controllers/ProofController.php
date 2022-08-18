@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Proof;
 use Illuminate\Contracts\View\View;
 
@@ -25,9 +26,22 @@ class ProofController extends Controller
             }
         }
 
+        $categories = collect(Category::cases())->map(function (Category $category) {
+            if (request()->has('search')) {
+                $proofs = Proof::search(request('search'))->get()->filter(fn ($proof) => $proof->category == $category);
+            } else {
+                $proofs = Proof::where('category', $category->value)->get();
+            }
+
+            return [$category, $proofs];
+        })->filter(function ($categoryArray) {
+            return $categoryArray[1]->count() > 0;
+        });
+
         return view('proofs.index', [
-            'proofs' => $proofs,
             'title' => request()->has('search') ? "Search results for '" . request('search') . "'" : 'Proof Archive',
+            'proofs' => $proofs,
+            'categories' => $categories,
         ]);
     }
 
