@@ -1,0 +1,9 @@
+[package]
+name = "bin"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+katex = "0.4"
+urlencoding = "2.1"
+regex = "1.0"

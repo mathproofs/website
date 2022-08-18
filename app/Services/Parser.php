@@ -20,10 +20,14 @@ class Parser
         $result = $converter->convert($markdown); /** @var RenderedContentWithFrontMatter $result */
         $metadata = $result->getFrontMatter();
 
+        $body = str_replace("\n", '', $result->getContent());
+        exec(base_path('bin/target/release/bin ' . str_replace('+', '%20', urlencode($body))), $output);
+        $body = $output[0];
+
         return [
             'title' => $metadata['title'],
             'category' => $metadata['category'] ?? null,
-            'body' => str_replace("\n", '', $result->getContent()),
+            'body' => $body,
         ];
     }
 }
