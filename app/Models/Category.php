@@ -15,7 +15,7 @@ enum Category: string
             self::ALGEBRA => 'Algebra',
             self::CALCULUS => 'Calculus',
             self::GEOMETRY => 'Geometry',
-            self::NUMBER_THEORY => 'Number theory',
+            self::NUMBER_THEORY => 'Number Theory',
         };
     }
 }
