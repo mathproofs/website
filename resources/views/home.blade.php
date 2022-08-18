@@ -45,7 +45,7 @@
                         <div class="p-10 bg-white rounded-lg shadow">
                             <h4 class="mb-4 text-2xl font-medium text-yellow-700">{{ $category->name() }}</h4>
 
-                            <ul class="space-y-2">
+                            <ul class="space-y-3">
                                 @foreach ($proofs->limit(3)->get() as $proof)
                                     <li><a class="hover:underline text-stone-600" href="{{ route('proofs.show', $proof) }}">{{ $proof->title }}</a></li>
                                 @endforeach
