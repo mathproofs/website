@@ -4,8 +4,8 @@ use App\Models\Proof;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('home');
+})->name('home');
 
 Route::get('/proofs/search', function () {
     return view('proofs.search', ['proofs' => Proof::search(request('query'))->get()]);

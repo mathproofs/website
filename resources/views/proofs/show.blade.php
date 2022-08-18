@@ -1,4 +1,4 @@
-<x-layout :title="$proof->title">
+<x-layout title="Math Proof: {{ $proof->title }}">
     <x-container class="my-12">
         <h1 class="mb-6 text-4xl font-bold">{{ $proof->title }}</h1>
 

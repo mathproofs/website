@@ -5,19 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>{{ $title }} - Mathproofs</title>
+    <title>{{ $title }}</title>
 
     @vite('resources/css/app.css')
 </head>
 <body>
     <nav class="border-b shadow-sm border-stone-200">
         <x-container class="flex items-center justify-between py-6">
-            <a href="#" class="flex items-center space-x-2 text-lg font-semibold">
+            <a href="{{ route('home') }}" class="flex items-center space-x-2 text-lg font-semibold">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.871 4A17.926 17.926 0 003 12c0 2.874.673 5.59 1.871 8m14.13 0a17.926 17.926 0 001.87-8c0-2.874-.673-5.59-1.87-8M9 9h1.246a1 1 0 01.961.725l1.586 5.55a1 1 0 00.961.725H15m1-7h-.08a2 2 0 00-1.519.698L9.6 15.302A2 2 0 018.08 16H8" />
                 </svg>
 
-                <span>Mathproofs</span>
+                <span>{{ config('app.name') }}</span>
             </a>
 
             <div class="relative flex justify-end">
