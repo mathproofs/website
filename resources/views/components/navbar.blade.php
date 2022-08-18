@@ -1,4 +1,4 @@
-<nav class="border-b shadow-sm border-stone-200">
+<nav class="border-b border-stone-200">
     <x-container class="flex items-center justify-between py-6">
         <a href="{{ route('home') }}">
             <x-logo />

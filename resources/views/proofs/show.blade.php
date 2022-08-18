@@ -2,7 +2,7 @@
     <x-navbar />
 
     <x-container class="my-12">
-        <h1 class="mb-6 text-4xl font-bold">{{ $proof->title }}</h1>
+        <h1 class="mb-6 text-4xl font-medium">{{ $proof->title }}</h1>
 
         @if ($proof->category)
             <p class="flex items-center mb-10 space-x-2 text-stone-700">
@@ -14,7 +14,7 @@
             </p>
         @endif
 
-        <div class="mt-10 prose prose-stone max-w-none">
+        <div class="mt-10 prose prose-stone max-w-none prose-h2:font-medium prose-h2:text-3xl prose-h3:font-medium prose-h3:text-2xl prose-h4:font-medium prose-h4:text-xl">
             {!! $proof->body !!}
         </div>
     </x-container>
