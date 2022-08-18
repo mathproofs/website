@@ -5,12 +5,12 @@
         </a>
 
         <div class="relative flex justify-end">
-            <form method="get" action="{{ route('proofs.search') }}">
+            <form method="get" action="{{ route('proofs.index') }}">
                 <input
                     type="text"
-                    name="query"
-                    value="{{ request('query') }}"
-                    id="query"
+                    name="search"
+                    value="{{ request('search') }}"
+                    id="search"
                     class="w-full py-2 pr-4 transition border rounded-md shadow-sm placeholder-stone-500 border-stone-200 peer focus:ring-1 focus:ring-yellow-500 focus:border-yellow-500 focus:outline-none pl-11"
                     placeholder="Search Proofs..."
                 />

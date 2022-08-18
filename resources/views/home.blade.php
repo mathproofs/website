@@ -12,12 +12,11 @@
         <h2 class="mb-20 text-5xl font-medium text-yellow-600">Easily explained</h2>
 
         <div class="relative">
-            <form method="get" action="{{ route('proofs.search') }}">
+            <form method="get" action="{{ route('proofs.index') }}">
                 <input
                     type="text"
-                    name="query"
-                    value="{{ request('query') }}"
-                    id="query"
+                    name="search"
+                    id="search"
                     class="w-full py-4 pl-16 pr-6 text-lg transition border rounded-md shadow-sm placeholder-stone-500 border-stone-300 peer focus:ring-1 focus:ring-yellow-500 focus:border-yellow-500 focus:outline-none"
                     placeholder="Search Proofs..."
                     autofocus
