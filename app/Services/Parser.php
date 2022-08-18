@@ -18,9 +18,11 @@ class Parser
 
         $converter = new MarkdownConverter($environment);
         $result = $converter->convert($markdown); /** @var RenderedContentWithFrontMatter $result */
+        $metadata = $result->getFrontMatter();
 
         return [
-            'title' => $result->getFrontMatter()['title'],
+            'title' => $metadata['title'],
+            'category' => $metadata['category'] ?? null,
             'body' => str_replace("\n", '', $result->getContent()),
         ];
     }

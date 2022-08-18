@@ -40,6 +40,7 @@ class ParseProofsCommand extends Command
         Proof::create([
             'title' => $data['title'],
             'slug' => $slug,
+            'category' => $data['category'],
             'body' => $data['body'],
         ]);
     }

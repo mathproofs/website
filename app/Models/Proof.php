@@ -10,4 +10,8 @@ class Proof extends Model
 {
     use HasFactory;
     use Searchable;
+
+    protected $casts = [
+        'category' => Category::class,
+    ];
 }
