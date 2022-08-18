@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use Illuminate\Support\Collection;
+
 enum Category: string
 {
     case ALGEBRA = 'algebra';
@@ -17,5 +19,10 @@ enum Category: string
             self::GEOMETRY => 'Geometry',
             self::NUMBER_THEORY => 'Number Theory',
         };
+    }
+
+    public function proofs(): Collection
+    {
+        return Proof::where('category', $this->value)->get();
     }
 }

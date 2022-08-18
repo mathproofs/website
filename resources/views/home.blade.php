@@ -35,11 +35,7 @@
             <h3 class="mb-16 text-4xl font-medium">Proofs By Category</h3>
 
             <div class="grid grid-cols-2 gap-6">
-                @foreach (\App\Models\Category::cases() as $category)
-                    @php
-                        $proofs = \App\Models\Proof::where('category', $category->value);
-                    @endphp
-
+                @foreach ($categories as [$category, $proofs])
                     @if($proofs->count() > 0)
                         <div class="p-10 bg-white rounded-lg shadow">
                             <h4 class="mb-4 text-2xl font-medium text-yellow-700">
@@ -49,7 +45,7 @@
                             </h4>
 
                             <ul class="space-y-3">
-                                @foreach ($proofs->limit(3)->get() as $proof)
+                                @foreach ($proofs->slice(0, 3) as $proof)
                                     <li><a class="hover:underline text-stone-600" href="{{ route('proofs.show', $proof) }}">{{ $proof->title }}</a></li>
                                 @endforeach
                             </ul>
