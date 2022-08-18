@@ -8,7 +8,7 @@
 
     <!-- Hero section -->
     <x-container class="my-48">
-        <h1 class="mb-4 text-6xl font-medium">Mathematical proofs</h1>
+        <h1 class="mb-4 text-6xl font-medium">Mathematical proofs,</h1>
         <h2 class="mb-20 text-5xl font-medium text-yellow-600">Easily explained</h2>
 
         <div class="relative">
