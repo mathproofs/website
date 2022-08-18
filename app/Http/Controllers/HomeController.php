@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Proof;
 use Illuminate\Contracts\View\View;
 
 class HomeController extends Controller
@@ -13,6 +14,7 @@ class HomeController extends Controller
             'categories' => collect(Category::cases())->map(
                 fn (Category $category) => [$category,  $category->proofs()]
             ),
+            'featured' => Proof::inRandomOrder()->first(),
         ]);
     }
 }

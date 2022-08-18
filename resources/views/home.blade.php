@@ -64,6 +64,15 @@
         </x-container>
     </div>
 
+    <!-- Featured proof -->
+    <x-container class="my-32">
+        <p class="text-lg font-light tracking-widest text-yellow-600 uppercase">Featured Proof</p>
+
+        <h3 class="max-w-xl mt-4 mb-12 text-3xl font-medium">{{ $featured->title }}</h3>
+
+        <a class="inline-block px-5 py-3 text-lg transition border rounded-md shadow-sm border-stone-300 hover:bg-stone-100" href="{{ route('proofs.show', $featured) }}">Read This Proof</a>
+    </x-container>
+
     <!-- Footer -->
     <x-footer />
 </x-layout>
