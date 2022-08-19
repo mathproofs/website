@@ -16,7 +16,7 @@
         </div>
 
         <ul>
-            @foreach ($proofs as $proof)
+            @forelse ($proofs as $proof)
                 <a href="{{ route('proofs.show', $proof) }}">
                     <li class="mb-10">
                         @unless(request()->has('category')) @if($proof->category) <p class="mb-1 font-light text-yellow-600 md:mb-2">{{ $proof->category->name() }}</p> @endif @endunless
@@ -26,7 +26,9 @@
                         @if($proof->description) <p class="text-stone-600">{{ $proof->description }}</p> @endif
                     </li>
                 </a>
-            @endforeach
+            @empty
+                <li class="-mt-12">No results found.</li>
+            @endforelse
         </ul>
     </x-container>
 
