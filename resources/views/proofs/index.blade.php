@@ -17,7 +17,15 @@
 
         <ul>
             @foreach ($proofs as $proof)
-                <li><a href="{{ route('proofs.show', $proof) }}">{{ $proof->title }}</a></li>
+                <a href="{{ route('proofs.show', $proof) }}">
+                    <li class="mb-10">
+                        @unless(request()->has('category')) @if($proof->category) <p class="mb-1 font-light text-yellow-600">{{ $proof->category->name() }}</p> @endif @endunless
+
+                        <h3 class="mb-1 text-xl font-medium" href="{{ route('proofs.show', $proof) }}">{{ $proof->title }}</h3>
+
+                        @if($proof->description) <p class="text-stone-600">{{ $proof->description }}</p> @endif
+                    </li>
+                </a>
             @endforeach
         </ul>
     </x-container>
