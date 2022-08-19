@@ -1,4 +1,4 @@
-<x-layout title="{{ config('app.name') }} - Find all mathematical proofs">
+<x-layout>
     <!-- Navbar -->
     <x-container class="my-8">
         <a href="{{ route('home') }}" class="text-stone-700">

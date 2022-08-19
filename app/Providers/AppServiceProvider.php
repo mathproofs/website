@@ -15,5 +15,7 @@ class AppServiceProvider extends ServiceProvider
     {
         Model::unguard();
         Model::preventLazyLoading();
+
+        seo()->site(config('app.name'))->image(asset('social.png'));
     }
 }

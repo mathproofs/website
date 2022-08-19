@@ -10,6 +10,12 @@ class ProofController extends Controller
 {
     public function index(): View
     {
+        $title = request()->has('search') ? "Search results for '" . request('search') . "'" : 'Proof Archive';
+
+        seo()
+            ->title($title . ' - ' . config('app.name'))
+            ->description('On this website you can find mathematical proofs for many theorems. These proofs are easy to read and understand.');
+
         // Find proofs
         if (request()->has('search')) {
             $proofs = request()->has('category')
@@ -32,7 +38,7 @@ class ProofController extends Controller
 
         // Return response
         return view('proofs.index', [
-            'title' => request()->has('search') ? "Search results for '" . request('search') . "'" : 'Proof Archive',
+            'title' => $title,
             'proofs' => $proofs,
             'categories' => $categories,
         ]);
@@ -40,6 +46,8 @@ class ProofController extends Controller
 
     public function show(Proof $proof): View
     {
+        seo()->title("Math proof: {$proof->title}")->description($proof->description);
+
         return view('proofs.show', [
             'proof' => $proof,
         ]);

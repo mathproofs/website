@@ -1,4 +1,4 @@
-<x-layout title="{{ $title }} - {{ config('app.name') }}">
+<x-layout>
     <x-navbar />
 
     <x-container class="my-12 md:my-6">
