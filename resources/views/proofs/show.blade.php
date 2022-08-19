@@ -1,7 +1,7 @@
 <x-layout title="Math Proof: {{ $proof->title }}">
     <x-navbar />
 
-    <x-container class="my-12">
+    <x-container class="my-12 md:my-6">
         <h1 class="mb-6 text-4xl font-medium">{{ $proof->title }}</h1>
 
         @if ($proof->category)
