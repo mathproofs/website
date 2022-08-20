@@ -3,7 +3,7 @@
         <x-navbar />
     </header>
 
-    <main class="relative grid grid-cols-4 my-12 md:my-6">
+    <main class="relative grid grid-cols-4 my-12 md:block md:my-6">
         <div>&nbsp;</div>
 
         <x-container class="w-full col-span-2">
@@ -43,7 +43,9 @@
         </x-container>
 
         <div>
-            <aside class="sticky max-w-xs space-y-8 top-16">
+            <aside class="sticky max-w-xs px-6 space-y-8 md:max-w-none top-16">
+                <hr class="hidden my-6 border-stone-200 md:block" />
+
                 <!-- Description -->
                 @if($proof->description)
                     <section>
