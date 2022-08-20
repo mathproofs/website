@@ -77,7 +77,7 @@
         @if($featured)
         <article>
             <x-container class="my-32 md:my-24">
-                <p class="text-lg font-light tracking-widest text-yellow-600 uppercase">Featured Proof</p>
+                <h4 class="text-lg font-light tracking-widest text-yellow-600 uppercase">Featured Proof Of The Week</h4>
 
                 <h3 class="max-w-xl mt-4 mb-12 text-3xl font-medium">{{ $featured->title }}</h3>
 
