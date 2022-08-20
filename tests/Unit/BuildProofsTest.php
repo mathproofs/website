@@ -80,3 +80,51 @@ it('can parse the description', function () {
 
     Storage::delete('proofs/@test-proof.md');
 });
+
+it('connects foundations to implications', function () {
+    $foundation = <<<'MARKDOWN'
+        ---
+        title: Foundation
+        ---
+
+        This is a foundation.
+        MARKDOWN;
+
+    $implication = <<<'MARKDOWN'
+        ---
+        title: Implication
+        foundations: [foundation]
+        ---
+
+        This is an implication.
+        MARKDOWN;
+
+    Storage::put('proofs/foundation.md', $foundation);
+    Storage::put('proofs/implication.md', $implication);
+
+    expect(Proof::count())->toBe(0);
+
+    $this->artisan('app:parse-proofs');
+
+    expect(Proof::count())->not()->toBe(0);
+
+    $foundationProof = Proof::where('slug', 'foundation')->firstOrFail();
+    expect($foundationProof->title)->toBe('Foundation');
+    expect($foundationProof->slug)->toBe('foundation');
+    expect($foundationProof->description)->toBeNull();
+    expect($foundationProof->category)->toBeNull();
+    expect($foundationProof->body)->toBe('<p>This is a foundation.</p>');
+
+    $implicationProof = Proof::where('slug', 'implication')->firstOrFail();
+    expect($implicationProof->title)->toBe('Implication');
+    expect($implicationProof->slug)->toBe('implication');
+    expect($implicationProof->description)->toBeNull();
+    expect($implicationProof->category)->toBeNull();
+    expect($implicationProof->body)->toBe('<p>This is an implication.</p>');
+
+    expect($implicationProof->foundations->first()->id)->toBe($foundationProof->id);
+    expect($foundationProof->implications->first()->id)->toBe($implicationProof->id);
+
+    Storage::delete('proofs/foundation.md');
+    Storage::delete('proofs/implication.md');
+});

@@ -6,7 +6,7 @@
     <main class="relative grid grid-cols-4 my-12 md:my-6">
         <div>&nbsp;</div>
 
-        <x-container class="col-span-2">
+        <x-container class="w-full col-span-2">
             <h1 class="mb-6 text-4xl font-medium">{{ $proof->title }}</h1>
 
             @if ($proof->category)
@@ -31,24 +31,28 @@
         <div>
             <aside class="sticky max-w-xs space-y-8 top-16">
                 <!-- Description -->
-                <section>
-                    <h2 class="mb-4 text-2xl font-medium">About this proof</h2>
+                @if($proof->description)
+                    <section>
+                        <h2 class="mb-4 text-2xl font-medium">About this proof</h2>
 
-                    <p class="text-stone-700">{{ $proof->description }}</p>
-                </section>
+                        <p class="text-stone-700">{{ $proof->description }}</p>
+                    </section>
+                @endif
 
-                {{-- <!-- Foundations -->
-                <section>
-                    <h3 class="mb-4 text-2xl font-medium">Foundations for this proof</h3>
+                <!-- Foundations -->
+                @if($proof->foundations()->count() > 0)
+                    <section>
+                        <h2 class="mb-4 text-2xl font-medium">Foundations for this proof</h2>
 
-                    <ul>
-                        @foreach (range(1, 3) as $i)
-                            <li class="mb-2">
-                                <a href="#" class="text-stone-700 hover:underline">{{ fake()->sentence() }}</a>
-                            </li>
-                        @endforeach
-                    </ul>
-                </section> --}}
+                        <ul>
+                            @foreach ($proof->foundations as $foundation)
+                                <li class="mb-2">
+                                    <a href="{{ route('proofs.show', $foundation) }}" class="text-stone-700 hover:underline">{{ $foundation->title }}</a>
+                                </li>
+                            @endforeach
+                        </ul>
+                    </section>
+                @endif
             </aside>
         </div>
     </main>

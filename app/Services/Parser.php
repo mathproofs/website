@@ -28,6 +28,7 @@ class Parser
             'title' => $metadata['title'],
             'description' => $metadata['description'] ?? null,
             'category' => $metadata['category'] ?? null,
+            'foundations' => $metadata['foundations'] ?? [],
             'body' => $body,
         ];
     }
