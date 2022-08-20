@@ -14,9 +14,11 @@ class HomeController extends Controller
             ->title(config('app.name') . ' - Mathematical proofs, easily explained')
             ->description('On this website you can find mathematical proofs for many theorems. These proofs are easy to read and understand.');
 
-        $categories = collect(Category::cases())->map(
-            fn (Category $category) => [$category,  $category->proofs()]
-        );
+        $categories = cache()->remember('categories_week_' . now()->week(), now()->addMonth(), function () {
+            return collect(Category::cases())->map(
+                fn (Category $category) => [$category,  $category->proofs()->shuffle()]
+            );
+        });
 
         $featuredProof = cache()->remember('featured_proof_week_' . now()->week(), now()->addMonth(), function () {
             return Proof::inRandomOrder()->first();
