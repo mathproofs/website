@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-math {
-    @apply text-lg text-left text-black;
+.katex-html {
+    @apply text-xl text-left text-black;
 }

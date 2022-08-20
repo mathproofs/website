@@ -63,27 +63,6 @@ it('can parse proofs with categories', function () {
     ]);
 });
 
-it('can parse math', function () {
-    $proof = <<<'MARKDOWN'
-        ---
-        title: This is a function
-        category: algebra
-        ---
-
-        Define function $ f $:
-
-        $$ f(x) = x^2 + 3x $$
-        MARKDOWN;
-
-    expect(Parser::parse($proof))->toBe([
-        'title' => 'This is a function',
-        'description' => null,
-        'category' => 'algebra',
-        'foundations' => [],
-        'body' => '<p>Define function <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex"> f </annotation></semantics></math></span>:</p><p><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn><mi>x</mi></mrow><annotation encoding="application/x-tex"> f(x) = x^2 + 3x </annotation></semantics></math></span></p>',
-    ]);
-});
-
 it('can have a description', function () {
     $proof = <<<'MARKDOWN'
         ---
@@ -102,7 +81,7 @@ it('can have a description', function () {
         'description' => 'This function is called f.',
         'category' => 'algebra',
         'foundations' => [],
-        'body' => '<p>Define function <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex"> f </annotation></semantics></math></span>:</p><p><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn><mi>x</mi></mrow><annotation encoding="application/x-tex"> f(x) = x^2 + 3x </annotation></semantics></math></span></p>',
+        'body' => '<p>Define function $ f $:</p><p>$$ f(x) = x^2 + 3x $$</p>',
     ]);
 });
 

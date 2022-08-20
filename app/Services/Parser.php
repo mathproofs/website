@@ -21,8 +21,6 @@ class Parser
         $metadata = $result->getFrontMatter();
 
         $body = str_replace("\n", '', $result->getContent());
-        exec(base_path('bin/target/release/bin ' . str_replace('+', '%20', urlencode($body))), $output);
-        $body = $output[0];
 
         return [
             'title' => $metadata['title'],
