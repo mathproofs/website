@@ -10,5 +10,5 @@ module.exports = {
             sm: { max: '639px' }
         }
     },
-    plugins: [require('@tailwindcss/typography')]
+    plugins: [require('@tailwindcss/typography'), require('@tailwindcss/line-clamp')]
 }
