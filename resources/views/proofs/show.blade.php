@@ -22,7 +22,7 @@
             @endif
 
             <article>
-                <div class="mt-10 prose prose-stone max-w-none prose-h2:font-medium prose-h2:text-3xl prose-h3:font-medium prose-h3:text-2xl prose-h4:font-medium prose-h4:text-xl">
+                <div class="mt-10 prose prose-lg md:prose-base prose-stone max-w-none prose-h2:font-medium prose-h2:text-3xl prose-h3:font-medium prose-h3:text-2xl prose-h4:font-medium prose-h4:text-xl">
                     {!! $proof->body !!}
                 </div>
             </article>
@@ -43,12 +43,12 @@
         </x-container>
 
         <div>
-            <aside class="sticky max-w-xs px-6 space-y-8 md:max-w-none top-16">
-                <hr class="hidden my-6 border-stone-200 md:block" />
+            <aside class="sticky max-w-xs px-6 md:max-w-none top-16">
+                <hr class="hidden my-6 mb-8 border-stone-200 md:block" />
 
                 <!-- Description -->
                 @if($proof->description)
-                    <section>
+                    <section class="mb-8">
                         <h2 class="mb-4 text-2xl font-medium">About this proof</h2>
 
                         <p class="text-stone-700">{{ $proof->description }}</p>
@@ -57,7 +57,7 @@
 
                 <!-- Foundations -->
                 @if($proof->foundations()->count() > 0)
-                    <section>
+                    <section class="mb-8">
                         <h2 class="mb-4 text-2xl font-medium">Foundations for this proof</h2>
 
                         <ul>
