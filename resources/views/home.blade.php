@@ -65,6 +65,7 @@
     </div>
 
     <!-- Featured proof -->
+    @if($featured)
     <x-container class="my-32 md:my-24">
         <p class="text-lg font-light tracking-widest text-yellow-600 uppercase">Featured Proof</p>
 
@@ -74,6 +75,7 @@
 
         <a class="inline-block px-5 py-3 text-lg transition border rounded-md shadow-sm border-stone-300 hover:bg-stone-100" href="{{ route('proofs.show', $featured) }}">Read This Proof</a>
     </x-container>
+    @endif
 
     <!-- Footer -->
     <x-footer />
