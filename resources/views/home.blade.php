@@ -81,7 +81,7 @@
 
                 <h3 class="max-w-xl mt-4 mb-12 text-3xl font-medium">{{ $featured->title }}</h3>
 
-                @if($proof->description) <p class="max-w-xl mb-12 -mt-6 text-xl font-light text-stone-700">{{ $featured->description }}</p> @endif
+                @if($featured->description) <p class="max-w-xl mb-12 -mt-6 text-xl font-light text-stone-700">{{ $featured->description }}</p> @endif
 
                 <a class="inline-block px-5 py-3 text-lg transition border rounded-md shadow-sm border-stone-300 hover:bg-stone-100" href="{{ route('proofs.show', $featured) }}">Read This Proof</a>
             </x-container>
