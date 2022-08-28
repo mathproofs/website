@@ -3,10 +3,8 @@
         <x-navbar />
     </header>
 
-    <main class="relative grid grid-cols-4 my-12 md:block md:my-6">
-        <div>&nbsp;</div>
-
-        <x-container class="w-full col-span-2">
+    <main class="relative my-12 md:my-6">
+        <x-container>
             <h1 class="mb-6 text-4xl font-medium">{{ $proof->title }}</h1>
 
             @if ($proof->category)
@@ -31,19 +29,19 @@
             @if($proof->implications()->count() > 0)
                 <hr class="my-12 border-stone-200 md:my-6" />
 
-                <h2 class="mb-6 text-3xl font-medium">Proofs building upon this proof</h2>
+                <h2 class="mb-6 text-3xl font-medium md:text-2xl">Proofs building upon this proof</h2>
 
                 @foreach ($proof->implications as $implication)
                     <a href="{{ route('proofs.show', $implication) }}" class="block mb-4">
-                        <h3 class="mb-1 text-xl font-medium">{{ $implication->title }}</h3>
+                        <h3 class="mb-1 text-xl font-medium md:text-lg">{{ $implication->title }}</h3>
                         <p class="text-stone-600 line-clamp-2">{{ $implication->description }}</p>
                     </a>
                 @endforeach
             @endif
         </x-container>
 
-        <div>
-            <aside class="sticky max-w-xs px-6 md:max-w-none top-16">
+        <div class="absolute md:relative top-0 h-full md:max-w-none max-w-xs md:left-0 left-[calc(50%+(768px/2))]">
+            <aside class="sticky px-6 top-8">
                 <hr class="hidden my-6 mb-8 border-stone-200 md:block" />
 
                 <!-- Description -->

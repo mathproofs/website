@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .katex-html {
-    @apply text-xl text-left text-black;
+    @apply overflow-x-auto overflow-y-hidden text-xl text-left text-black;
 }
