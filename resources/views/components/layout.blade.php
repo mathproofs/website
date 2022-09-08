@@ -25,7 +25,7 @@
         });
     </script>
 </head>
-<body>
+<body class="text-base">
     {{ $slot }}
 </body>
 </html>
