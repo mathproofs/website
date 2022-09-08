@@ -2,6 +2,7 @@
 title: Constant rule in calculus
 description: This proofs shows that the derivative of a constant is always zero.
 category: calculus
+foundations: [definition-of-derivative]
 ---
 
 ## Statement
@@ -16,7 +17,7 @@ Define function $ f $.
 
 $$ f(x) = c $$
 
-Take the definition of the derivative.
+Take [the definition of the derivative](/proofs/definition-of-derivative).
 
 $$ f'(x) = \lim_{h \to 0}\left(\frac{f(x + h) - f(x)}{h}\right) $$
 

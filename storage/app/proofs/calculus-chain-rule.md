@@ -2,6 +2,7 @@
 title: Chain rule in calculus
 description: This proofs show that the derivative of a nested function is the derivative of the outer function multiplied by the derivative of the inner function.
 category: calculus
+foundations: [definition-of-derivative]
 ---
 
 ## Statement
@@ -16,7 +17,7 @@ Define function $ f $.
 
 $$ f(x) = g(j(x)) $$
 
-Take the definition for the derivative.
+Take [the definition for the derivative](/proofs/definition-of-derivative).
 
 $$ f'(x) = \lim\_{h \to 0}\left(\frac{f(x + h) - f(x)}{h}\right) $$
 

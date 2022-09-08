@@ -2,6 +2,7 @@
 title: Sum rule in calculus
 description: This proofs shows that the derivative of two functions is the derivative of the first function plus the derivative of the second function.
 category: calculus
+foundations: [definition-of-derivative]
 ---
 
 ## Statement
@@ -16,7 +17,7 @@ Define function $ f $.
 
 $$ f(x) = g(x) + j(x) $$
 
-Use the definition of the derivative.
+Use [the definition of the derivative](/proofs/definition-of-derivative).
 
 $$ f'(x) = \lim\_{h \to 0}\left(\frac{f(x + h) - f(x)}{h}\right) $$
 

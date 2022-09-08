@@ -2,6 +2,7 @@
 title: Coefficient rule in calculus
 description: This proof shows that the derivative of a function with a coefficient is the coefficient times the derivative of that function.
 category: calculus
+foundations: [definition-of-derivative]
 ---
 
 ## Statement
@@ -16,7 +17,7 @@ Define function $ f $.
 
 $$ f(x) = c * g(x) $$
 
-Take the definition of the derivative.
+Take [the definition of the derivative](/proofs/definition-of-derivative).
 
 $$ f'(x) = \lim_{h \to 0}\left(\frac{f(x + h) - f(x)}{h}\right) $$
 
