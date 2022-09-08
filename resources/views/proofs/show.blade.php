@@ -27,10 +27,10 @@
             @if($proof->implications()->count() > 0)
                 <hr class="my-12 border-stone-200 md:my-6" />
 
-                <h2 class="mb-6 text-3xl font-medium md:text-2xl">Proofs building upon this proof</h2>
+                <h2 class="mb-10 text-3xl font-medium md:text-2xl">Proofs building upon this proof</h2>
 
                 @foreach ($proof->implications as $implication)
-                    <a href="{{ route('proofs.show', $implication) }}" class="block mb-4">
+                    <a href="{{ route('proofs.show', $implication) }}" class="block mb-8">
                         <h3 class="mb-1 text-xl font-medium md:text-lg">{{ $implication->title }}</h3>
                         <p class="text-stone-600 line-clamp-2">{{ $implication->description }}</p>
                     </a>
