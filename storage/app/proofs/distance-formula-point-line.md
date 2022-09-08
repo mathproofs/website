@@ -20,8 +20,6 @@ This picture can be used to better understand this proof. Remember that all poin
 
 Let $ k $ be the line where $ k \perp l $ and $ k $ goes through $ O(0, 0) $:
 
-$$ k: y = m_kx + b_k $$
-
 Since $ k \perp l $, we can find the slope $ m_k $:
 
 $$ m_k \* m_l = -1 \implies m_k \* a = -1 \implies m_k = -\frac{1}{a} $$
