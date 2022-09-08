@@ -21,13 +21,13 @@ $$ f(x) = g(x) \* j(x)^{-1} $$
 
 Differentiate $ f $ using the [product](/proofs/calculus-product-rule) rule.
 
-$$ f'(x) = \tfrac{d}{dx}(g(x)) \* j(x)^{-1} + g(x) \* \tfrac{d}{dx}(j(x)^{-1}) $$
+$$ f'(x) = \tfrac{d}{dx}\bigg(g(x)\bigg) \* j(x)^{-1} + g(x) \* \tfrac{d}{dx}\bigg(j(x)^{-1}\bigg) $$
 
-$$ f'(x) = g'(x) \* j(x)^{-1} + g(x) \* \tfrac{d}{dx}(j(x)^{-1}) $$
+$$ f'(x) = g'(x) \* j(x)^{-1} + g(x) \* \tfrac{d}{dx}\bigg(j(x)^{-1}\bigg) $$
 
-Differentiate $ \tfrac{d}{dx}(j(x)^{-1}) $ using the [power rule](/proofs/calculus-power-rule) and the [chain rule](/proofs/calculus-chain-rule).
+Differentiate $ \tfrac{d}{dx}\bigg(j(x)^{-1}\bigg) $ using the [power rule](/proofs/calculus-power-rule) and the [chain rule](/proofs/calculus-chain-rule).
 
-$$ f'(x) = g'(x) \* j(x)^{-1} + g(x) \* -1 \* j(x)^{-2} \* \tfrac{d}{dx}(j(x)) $$
+$$ f'(x) = g'(x) \* j(x)^{-1} + g(x) \* -1 \* j(x)^{-2} \* \tfrac{d}{dx}\bigg(j(x)\bigg) $$
 
 $$ f'(x) = g'(x) \* j(x)^{-1} - g(x) \* j(x)^{-2} \* j'(x) $$
 
