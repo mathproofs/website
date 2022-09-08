@@ -18,7 +18,7 @@ This picture can be used to better understand this proof. Remember that all poin
 
 ## Line k through O(0, 0)
 
-Let $ k $ be the line where $ k \perp l $ and $ k $ goes through $ O(0, 0) $:
+Let $ k $ be the line where $ k \perp l $ and $ k $ goes through $ O(0, 0) $.
 
 Since $ k \perp l $, we can find the slope $ m_k $:
 
