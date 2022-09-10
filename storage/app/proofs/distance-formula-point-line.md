@@ -15,7 +15,7 @@ $$ d(P, l) = \frac{| ax_P - y_P + b |}{\sqrt{a^2 + 1}} $$
 
 This picture can be used to better understand this proof. Remember that all points and lines have variable positions.
 
-![A coordinate system showing all points and lines from this proof.](/proofs/distance-formula-point-line.png)
+![A coordinate system showing all points and lines from this proof.](/proofs/distance-formula-point-line.svg)
 
 ## Line k through P
 
