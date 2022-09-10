@@ -2,6 +2,7 @@
 title: Distance formula between a point and a line
 description: This proof shows a formula for calculating the distance between a point and a line in the form of y = ax + b.
 category: geometry
+foundations: [pythagorean-theorem]
 ---
 
 ## Statement
@@ -58,7 +59,7 @@ $$ Q = \left(\frac{ay_P + x_P - ab}{a^2 + 1}, \frac{a^2y_P + ax_P + b}{a^2 + 1}\
 
 ## Distance between Q and P
 
-Since $ k \perp l $ and $ k $ goes through $ Q $ and $ P $, $ d(P, l) = d(Q, P) $. This distance can be found using the Pythagorean theorem.
+Since $ k \perp l $ and $ k $ goes through $ Q $ and $ P $, $ d(P, l) = d(Q, P) $. This distance can be found using the [Pythagorean theorem](/proofs/pythagorean-theorem).
 
 $$ d(Q, P) = \sqrt{(x_Q - x_P)^2 + (y_Q - y_P)^2} $$
 
