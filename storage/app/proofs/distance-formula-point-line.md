@@ -7,7 +7,7 @@ foundations: [pythagorean-theorem]
 
 ## Statement
 
-The distance between the point $ P(x_P, y_P) $ and the line $ l: y = ax + b $ is given by:
+In cartesian coordinates, the distance between the point $ P(x_P, y_P) $ and the line $ l: y = ax + b $ is given by:
 
 $$ d(P, l) = \frac{| ax_P - y_P + b |}{\sqrt{a^2 + 1}} $$
 
