@@ -20,6 +20,6 @@ $$ a \* b = 2n(2m + 1) = 4mn + 2n = 2(2mn + n) $$
 
 Since $ 2mn + n $ will always be an integer, substitute $ 2mn + n = k, k \in \N $.
 
-$$ a + b = 2k $$
+$$ a \* b = 2k $$
 
-From this follows that $ 2k $ is always even, and thus $ a + b $ is always even as well.
+From this follows that $ 2k $ is always even, and thus $ a \* b $ is always even as well.

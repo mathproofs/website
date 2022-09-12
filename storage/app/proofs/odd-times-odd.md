@@ -18,6 +18,6 @@ $$ a \* b = (2n + 1)(2m + 1) = 4mn + 2n + 2m + 1 = 2(2mn + n + m) + 1 $$
 
 Since $ 2mn + n + m $ will always be an integer, substitute $ 2mn + n + m = k, k \in \N $.
 
-$$ a + b = 2k + 1 $$
+$$ a \* b = 2k + 1 $$
 
 From this follows that $ 2k + 1 $ is always odd, and thus $ a \* b $ is always odd as well.

@@ -18,6 +18,6 @@ $$ a * b = 2n * 2m = 4mn = 2 * 2mn $$
 
 Since $ 2mn $ will always be an integer, substitute $ 2mn = k, k \in \N $.
 
-$$ a + b = 2k $$
+$$ a * b = 2k $$
 
 From this follows that $ 2k $ is always even, and thus $ a * b $ is always even as well.
