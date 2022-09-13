@@ -10,15 +10,15 @@ Given the even number $ a $ and the odd number $ b $, then $ a + b $ will be odd
 
 ## Proof
 
-Since every even number is a multiple of two, you can write $ a = 2n $ where $ n \in \N $.
+Since every even number is a multiple of two, you can write $ a = 2n $ where $ n \in \Z $.
 
-And since every odd number is a multiple of two plus one, you can write $ b = 2m + 1 $ where $ m \in \N $.
+And since every odd number is a multiple of two plus one, you can write $ b = 2m + 1 $ where $ m \in \Z $.
 
 When you add $ a $ and $ b $, you can factor out a $ 2 $.
 
 $$ a + b = 2n + 2m + 1 = 2(n + m) + 1 $$
 
-Since $ n + m $ will always be an integer, substitute $ n + m = k, k \in \N $.
+Since $ n + m $ will always be an integer, substitute $ n + m = k, k \in \Z $.
 
 $$ a + b = 2k + 1 $$
 

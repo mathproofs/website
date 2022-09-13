@@ -10,13 +10,13 @@ Given even numbers $ a $ and $ b $, then $ a + b $ will be even as well.
 
 ## Proof
 
-Since every even number is a multiple of two, you can write $ a = 2n $ and $ b = 2m $ where $ n, m \in \N $.
+Since every even number is a multiple of two, you can write $ a = 2n $ and $ b = 2m $ where $ n, m \in \Z $.
 
 When you add $ a $ and $ b $, you can factor out a $ 2 $.
 
 $$ a + b = 2n + 2m = 2(n + m) $$
 
-Since $ n + m $ will always be an integer, substitute $ n + m = k, k \in \N $.
+Since $ n + m $ will always be an integer, substitute $ n + m = k, k \in \Z $.
 
 $$ a + b = 2k $$
 
