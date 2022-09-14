@@ -30,10 +30,8 @@ Simplify the second logarithm, since $ \log_a(...) $ and $ a^{...} $ are inverse
 
 $$ \log_a(bc) = x + y $$
 
-Now re-substitute $ x $ and $ y $.
+Finally, re-substitute $ x $ and $ y $ and flip the equation.
 
 $$ \log_a(bc) = \log_a(b) + \log_a(c) $$
-
-Finally, flip the equation.
 
 $$ \log_a(b) + \log_a(c) = \log_a(bc) $$
