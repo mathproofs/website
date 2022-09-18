@@ -1,5 +1,6 @@
 ---
 title: Factoring the difference of two squares
+description: This proof shows how to factor a difference of two squares.
 category: algebra
 ---
 
