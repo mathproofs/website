@@ -2,7 +2,7 @@
 title: Power rule in calculus
 description: This proofs shows that the derivative of x^r is r * x^(r - 1).
 category: calculus
-foundations: [calculus-chain-rule]
+foundations: [calculus-chain-rule, derivative-of-ex]
 ---
 
 ## Statement
