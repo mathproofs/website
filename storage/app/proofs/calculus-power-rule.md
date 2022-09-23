@@ -21,7 +21,7 @@ Rewrite the function using $ e $ and $ \ln $. Since they are inverse functions, 
 
 $$ f(x) = e^{\ln(x^r)} $$
 
-Differentiate this function, and mutliply by the [chain rule](/proofs/calculus-chain-rule).
+Differentiate this function [by the derivative of e^x](/proofs/derivative-of-ex), and mutliply by the [chain rule](/proofs/calculus-chain-rule).
 
 $$ f'(x) = e^{\ln(x^r)} * \tfrac{d}{dx}(\ln(x^r)) $$
 
