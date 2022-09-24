@@ -2,6 +2,7 @@
 title: The derivative of e to the x
 description: This proof shows that the definition of e^x is e^x.
 category: calculus
+foundations: [definition-of-derivative]
 ---
 
 ## Statement

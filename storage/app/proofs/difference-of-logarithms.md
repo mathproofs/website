@@ -2,6 +2,7 @@
 title: The difference of logarithms
 description: This proof shows that the difference of two logarithms with the same base is just one logarithm with the inside parts being divided.
 category: algebra
+foundations: [logarithm-power-rule, sum-of-logarithms]
 ---
 
 ## Statement
