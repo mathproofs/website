@@ -25,4 +25,14 @@ enum Category: string
     {
         return Proof::where('category', $this->value)->get();
     }
+
+    public function color(): string
+    {
+        return match ($this) {
+            self::ALGEBRA => '#bfdbfe',
+            self::CALCULUS => '#fecaca',
+            self::GEOMETRY => '#fef08a',
+            self::NUMBER_THEORY => '#bbf7d0'
+        };
+    }
 }
