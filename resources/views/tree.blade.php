@@ -2,16 +2,19 @@
     <div id="mynetwork" class="w-full h-screen"></div>
 
     <div
-        class="absolute top-8 right-8 w-72 space-y-3 rounded-md border border-gray-300 bg-white p-4 shadow-sm sm:w-[calc(100%-64px)]"
+        class="absolute top-8 right-8 w-72 space-y-3 rounded-md border border-gray-300 bg-white p-4 shadow-sm sm:top-4 sm:right-4 sm:w-[calc(100%-32px)] sm:space-y-1 sm:py-2"
     >
-        <h3 class="text-lg font-semibold">Categories</h3>
+        <h3 class="text-lg font-semibold sm:text-base">Categories</h3>
         @foreach($categories as $category)
-        <div class="flex items-center space-x-3">
-            <div class="w-6 h-6 rounded" style="background: {{ $category->color() }}"></div>
-            <span>{{ $category->name() }}</span>
+        <div class="flex items-center space-x-3 sm:space-x-2">
+            <div
+                class="w-6 h-6 rounded sm:h-5 sm:w-5"
+                style="background: {{ $category->color() }}"
+            ></div>
+            <span class="sm:text-sm">{{ $category->name() }}</span>
         </div>
         @endforeach
-        <p class="text-sm">Double click a proof to open it.</p>
+        <p class="text-sm sm:text-xs">Double click a proof to open it.</p>
     </div>
 
     <x-slot name="head">
