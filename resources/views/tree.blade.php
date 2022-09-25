@@ -51,7 +51,7 @@
 
         network.on("doubleClick", function (params) {
             slug = params.nodes[0]
-            window.open('/proofs/' + slug)
+            window.open('/proofs/' + slug, '_self')
         });
     </script>
 </x-layout>
