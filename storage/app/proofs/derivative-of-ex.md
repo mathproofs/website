@@ -2,7 +2,7 @@
 title: The derivative of e to the x
 description: This proof shows that the definition of e^x is e^x.
 category: calculus
-foundations: [definition-of-derivative]
+foundations: [definition-of-derivative, adding-exponents]
 ---
 
 ## Statement
@@ -35,7 +35,7 @@ $$ f'(x) = \lim\_{h \to 0}\left(\frac{f(x + h) - f(x)}{h}\right) $$
 
 $$ f'(x) = \lim\_{h \to 0}\left(\frac{e^{x + h} - e^x}{h}\right) $$
 
-By the properties of exponents, write $ e^{x + h} = e^x \* e^h $ and factor out $ e^x $.
+By the rule of [adding exponents](/proofs/adding-exponents), write $ e^{x + h} = e^x \* e^h $ and factor out $ e^x $.
 
 $$ f'(x) = \lim\_{h \to 0}\left(\frac{e^x \* e^h - e^x}{h}\right) $$
 

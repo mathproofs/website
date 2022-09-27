@@ -2,6 +2,7 @@
 title: Change of base formula for logarithms
 description: This proofs shows that every logarithm can be written as a division of two logarithms with a custom base.
 category: algebra
+foundations: [multiplying-exponents]
 ---
 
 ## Statement
@@ -28,7 +29,7 @@ Now substitute $ a = c^z $.
 
 $$ (c^z)^x = c^y $$
 
-Multiply the exponents and set them equal to eachother.
+[Multiply the exponents](/proofs/multiplying-exponents) and set them equal to eachother.
 
 $$ c^{xz} = c^y $$
 

@@ -2,6 +2,7 @@
 title: The sum of logarithms
 description: This proof shows that the sum of two logarithms with the same base is just one logarithm with the inside parts being multiplied.
 category: algebra
+foundations: [adding-exponents]
 ---
 
 ## Statement
@@ -18,7 +19,7 @@ $$ x = \log_a(b) \implies a^x = b $$
 
 $$ y = \log_a(c) \implies a^y = c $$
 
-Now multiply $ b $ and $ c $. By properties of exponentials, add the exponents.
+Now multiply $ b $ and $ c $ and [add the exponents](/proofs/adding-exponents).
 
 $$ b \* c = a^x \* a^y = a^{x + y} $$
 

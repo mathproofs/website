@@ -2,7 +2,7 @@
 title: Power rule in calculus
 description: This proofs shows that the derivative of x^r is r * x^(r - 1).
 category: calculus
-foundations: [calculus-chain-rule, derivative-of-ex]
+foundations: [calculus-chain-rule, derivative-of-ex, adding-exponents]
 ---
 
 ## Statement
@@ -37,7 +37,7 @@ The derivative of $ \ln(x) $ is $ \frac{1}{x} $.
 
 $$ f'(x) = x^r * r * \frac{1}{x} $$
 
-Now simplify this function to the final result.
+Now simplify this function to the final result by using negative exponents and [adding exponents](/proofs/adding-exponents).
 
 $$ f'(x) = r * x^r * x^{-1} $$
 

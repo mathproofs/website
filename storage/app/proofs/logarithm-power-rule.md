@@ -2,6 +2,7 @@
 title: The logarithm power rule
 description: This proofs shows that a logarithm of a power is the same as the exponent multiplied by that logarithm.
 category: algebra
+foundations: [multiplying-exponents]
 ---
 
 ## Statement
@@ -16,7 +17,7 @@ Let $ x = \log_a(b) $. Now rewrite it as a power.
 
 $$ a^x = b $$
 
-Raise both sides to the power $ c $.
+Raise both sides to the power $ c $ and [multiply the exponents](/proofs/multiplying-exponents).
 
 $$ (a^x)^c = b^c $$
 

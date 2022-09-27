@@ -2,6 +2,7 @@
 title: The keep-change-flip rule for fractions
 description: This proof shows the famous keep-change-flip rule when dividing by fractions.
 category: algebra
+foundations: [multiplying-exponents]
 ---
 
 ## Statement
@@ -24,7 +25,7 @@ Append the powers to the factors.
 
 $$ a \div \frac{b}{c} = a \* b^{-1} \* (c^{-1})^{-1} $$
 
-Multiply the exponents.
+[Multiply the exponents](/proofs/multiplying-exponents).
 
 $$ a \div \frac{b}{c} = a \* b^{-1} \* c^1 $$
 
