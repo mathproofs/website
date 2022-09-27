@@ -2,6 +2,7 @@
 title: An odd number plus an odd number is even
 description: This proofs shows that an odd number plus an odd number will always be even.
 category: number-theory
+foundations: [odd-number-as-integer]
 ---
 
 ## Statement
@@ -10,7 +11,7 @@ Given the odd numbers $ a $ and $ b $, then $ a + b $ will be even.
 
 ## Proof
 
-Since every odd number is a multiple of two plus one, you can write $ a = 2n + 1 $ and $ b = 2m + 1 $ where $ n, m \in \Z $.
+Since [every odd number is a multiple of two plus one](/proofs/odd-number-as-integer), you can write $ a = 2n + 1 $ and $ b = 2m + 1 $ where $ n, m \in \Z $.
 
 When you add $ a $ and $ b $, you can factor out a $ 2 $.
 

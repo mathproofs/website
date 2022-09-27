@@ -2,6 +2,7 @@
 title: An even number plus an even number is even
 description: This proofs shows that an even number plus another even number will always be even.
 category: number-theory
+foundations: [even-number-as-integer]
 ---
 
 ## Statement
@@ -10,7 +11,7 @@ Given even numbers $ a $ and $ b $, then $ a + b $ will be even as well.
 
 ## Proof
 
-Since every even number is a multiple of two, you can write $ a = 2n $ and $ b = 2m $ where $ n, m \in \Z $.
+Since [every even number is a multiple of two](/proofs/even-number-as-integer), you can write $ a = 2n $ and $ b = 2m $ where $ n, m \in \Z $.
 
 When you add $ a $ and $ b $, you can factor out a $ 2 $.
 
