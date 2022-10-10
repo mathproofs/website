@@ -70,7 +70,7 @@ Note that both $ \frac{a}{\sin(\alpha)} $ and $ \frac{c}{\sin(\gamma)} $ are equ
 
 $$ \frac{a}{\sin(\alpha)} = \frac{c}{\sin(\gamma)} $$
 
-### Conclusion
+## Conclusion
 
 Since $ \frac{a}{\sin(\alpha)} = \frac{b}{\sin(\beta)} $ and $ \frac{a}{\sin(\alpha)} = \frac{c}{\sin(\gamma)} $:
 
