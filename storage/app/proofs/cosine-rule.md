@@ -1,7 +1,7 @@
 ---
 title: Cosine rule
 description: This proofs shows that the cosine rule is correct.
-category: calculus
+category: geometry
 foundations: [pythagorean-theorem]
 ---
 
