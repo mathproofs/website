@@ -25,8 +25,8 @@ Differentiate both sides with respect to $ x $. The left sides is differentiated
 
 $$ \tfrac{d}{dx}(e^y) = \tfrac{d}{dx}(x) $$
 
-$$ e^y \* y' = 1 $$
+$$ e^y \* \frac{dy}{dx} = 1 $$
 
 Finally, divide both sides by $ e^y $ and substitute $ e^y = x $.
 
-$$ y' = \frac{1}{e^y} = \frac{1}{x} $$
+$$ \frac{dy}{dx} = \frac{1}{e^y} = \frac{1}{x} $$
