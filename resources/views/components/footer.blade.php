@@ -5,6 +5,6 @@
             <a class="hover:underline" href="https://jeroenvanrensen.nl/">Jeroen van Rensen</a>
         </p>
 
-        <p><a href="{{ route('tree') }}">Tree of Proofs</a></p>
+        <p><a class="underline" href="{{ route('tree') }}">Tree of Proofs</a></p>
     </x-container>
 </footer>
