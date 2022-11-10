@@ -1,5 +1,6 @@
 ---
 title: Exact values of the trig functions
+description: This table shows all exact values of sine, cosine and tangent.
 category: geometry
 foundations: [trig-values-30-60-degrees, trig-values-45-degrees]
 ---
