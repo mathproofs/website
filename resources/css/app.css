@@ -5,3 +5,7 @@
 .katex-html {
     @apply overflow-x-auto overflow-y-hidden text-xl text-left text-black;
 }
+
+img {
+    break-inside: avoid !important;
+}
