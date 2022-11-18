@@ -11,24 +11,41 @@ use Illuminate\Support\Facades\Storage;
 
 class ParseProofsCommand extends Command
 {
-    protected $signature = 'app:parse-proofs';
+    protected $signature = 'parse {--W|watch}';
 
-    protected $description = 'Command description';
+    protected $description = 'Parse all proofs';
+
+    public function handle(): int
+    {
+        if (!$this->option('watch')) {
+            $this->do();
+            return 0;
+        }
+
+        while (true) {
+            $this->do(false);
+            sleep(1);
+        }
+    }
 
     /**
      * This program isn't very efficient, but it does not
      * really matter since this program is only run once
      * by the artisan command, not for every page request.
      */
-    public function handle(): int
+    public function do($output = true)
     {
         Proof::truncate();
         DB::table('foundation_implication')->truncate();
-        $this->info('Deleted all proofs!');
+        if ($output) {
+            $this->info('Deleted all proofs!');
+        }
         $this->newLine();
 
         $files = Storage::files('proofs');
-        $this->comment('Generating ' . count($files) . ' proofs...');
+        if ($output) {
+            $this->comment('Generating ' . count($files) . ' proofs...');
+        }
 
         $foundations = new Collection();
 
@@ -37,11 +54,13 @@ class ParseProofsCommand extends Command
             $foundations->put((string) $slug, $foundationsList);
         });
 
-        $this->newLine();
-        $this->info('Generated ' . count($files) . ' proof!');
+        if ($output) {
+            $this->newLine();
+            $this->info('Generated ' . count($files) . ' proof!');
 
-        $this->newLine();
-        $this->comment('Parsing foundations structure...');
+            $this->newLine();
+            $this->comment('Parsing foundations structure...');
+        }
 
         $foundations->filter()->each(function ($foundationsList, $implicationSlug) {
             $implication = Proof::where('slug', $implicationSlug)->first();
@@ -52,9 +71,9 @@ class ParseProofsCommand extends Command
             }
         });
 
-        $this->info('Parsed foundations structure!');
-
-        return 0;
+        if ($output) {
+            $this->info('Parsed foundations structure!');
+        }
     }
 
     protected function parseProofAndReturnFoundations(string $filename): array
