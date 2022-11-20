@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ['./resources/**/*.blade.php'],
+    content: ['./resources/**/*.blade.php', './storage/app/proofs/*.md'],
     theme: {
         screens: {
             '2xl': { max: '1535px' },
