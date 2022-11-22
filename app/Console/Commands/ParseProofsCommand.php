@@ -88,6 +88,7 @@ class ParseProofsCommand extends Command
             'slug' => $slug,
             'description' => $data['description'],
             'category' => $data['category'],
+            'wip' => $data['wip'],
             'body' => $data['body'],
         ]);
 

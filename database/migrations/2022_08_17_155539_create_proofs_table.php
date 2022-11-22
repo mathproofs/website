@@ -13,6 +13,7 @@ return new class() extends Migration {
             $table->string('slug')->unique();
             $table->string('description')->nullable();
             $table->string('category')->nullable();
+            $table->boolean('wip');
             $table->text('body');
             $table->timestamps();
         });

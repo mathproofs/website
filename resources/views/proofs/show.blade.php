@@ -33,6 +33,12 @@
                 </a>
             </p>
 
+            @if($proof->wip)
+            <div class="px-5 py-4 text-white bg-orange-500 rounded-md shadow print:border print:border-gray-500 print:shadow-md">
+                <span class="font-bold">Warning!</span> This proof is work in progress, and it probably contains false statements.
+            </div>
+            @endif
+
             <article>
                 <div class="mt-10 prose prose-lg md:prose-base prose-stone max-w-none prose-h2:font-medium prose-h2:text-3xl prose-h3:font-medium prose-h3:text-2xl prose-h4:font-medium prose-h4:text-xl">
                     {!! $proof->body !!}

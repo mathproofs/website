@@ -2,9 +2,8 @@
 title: The cube root of a complex number
 category: algebra
 foundations: [quadratic-formula]
+wip: true
 ---
-
-<div class="px-5 py-4 text-white bg-orange-500 rounded-md shadow print:border print:border-gray-500 print:shadow-md"><span class="font-bold">Warning!</span> This proof is not completed yet, and probably contains false statements.</div>
 
 Consider the cube root of a complex number, $ \sqrt[3]{a + bi} $. Now write this in the standard form: $ c + di $, so you get:
 
