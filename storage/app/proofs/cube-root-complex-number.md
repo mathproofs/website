@@ -77,11 +77,11 @@ $$ n^3 + \tfrac{3}{4}an^2 + \tfrac{3}{16}a^2n + \tfrac{1}{64}a^3 - \tfrac{3}{4}a
 
 Group all terms by $ n $ and add like terms.
 
-$$ n^3 + \bigg(\tfrac{3}{4}a - \tfrac{3}{4}a\bigg)n^2 + \bigg(\tfrac{3}{16}a^2 - \tfrac{1}{8}a^2 - \tfrac{15}{64}a^2 - \tfrac{27}{64}b^2\bigg)n + \bigg(\tfrac{1}{64}a^3 - \tfrac{3}{64}a^3 - \tfrac{15}{256}a^3 - \tfrac{27}{256}ab^2 - \tfrac{1}{64}a^3\bigg) = 0 $$
+$$ n^3 + \bigg(\tfrac{3}{4}a - \tfrac{3}{4}a\bigg)n^2 + \bigg(\tfrac{3}{16}a^2 - \tfrac{3}{8}a^2 - \tfrac{15}{64}a^2 - \tfrac{27}{64}b^2\bigg)n + \bigg(\tfrac{1}{64}a^3 - \tfrac{3}{64}a^3 - \tfrac{15}{256}a^3 - \tfrac{27}{256}ab^2 - \tfrac{1}{64}a^3\bigg) = 0 $$
 
-$$ n^3 + \bigg(-\tfrac{11}{64}a^2 - \tfrac{27}{64}b^2\bigg)n + \bigg(-\tfrac{27}{256}a^3 - \tfrac{27}{256}ab^2\bigg) = 0 $$
+$$ n^3 + \bigg(-\tfrac{27}{64}a^2 - \tfrac{27}{64}b^2\bigg)n + \bigg(-\tfrac{27}{256}a^3 - \tfrac{27}{256}ab^2\bigg) = 0 $$
 
-Let $ n = u + v $ and $ -\tfrac{11}{64}a^2 - \tfrac{27}{64}b^2 = -3uv \implies v = \frac{\frac{11}{64}a^2 + \frac{27}{64}b^2}{3u} = \frac{\frac{11}{192}a^2 + \frac{9}{64}b^2}{u} $.
+Let $ n = u + v $ and $ -\tfrac{27}{64}a^2 - \tfrac{27}{64}b^2 = -3uv \implies v = \frac{\frac{27}{64}a^2 + \frac{27}{64}b^2}{3u} = \frac{\frac{9}{64}a^2 + \frac{9}{64}b^2}{u} $.
 
 $$ (u + v)^3 - 3uv(u + v) - \tfrac{27}{256}a^3 - \tfrac{27}{256}ab^2 = 0 $$
 
@@ -91,41 +91,41 @@ $$ u^3 + v^3 - \tfrac{27}{256}a^3 - \tfrac{27}{256}ab^2 = 0 $$
 
 Substitute $ v $ and multiply both sides by $ u^3 $.
 
-$$ u^3 + \left(\frac{\tfrac{11}{192}a^2 + \frac{9}{64}b^2}{u}\right)^3 - \tfrac{27}{256}a^3 - \tfrac{27}{256}ab^2 = 0 $$
+$$ u^3 + \left(\frac{\tfrac{9}{64}a^2 + \frac{9}{64}b^2}{u}\right)^3 - \tfrac{27}{256}a^3 - \tfrac{27}{256}ab^2 = 0 $$
 
-$$ u^3 + \frac{\left(\frac{11}{192}a^2 + \tfrac{9}{64}b^2\right)^3}{u^3} - \tfrac{27}{256}a^3 - \tfrac{27}{256}ab^2 = 0 $$
+$$ u^3 + \frac{\left(\frac{9}{64}a^2 + \tfrac{9}{64}b^2\right)^3}{u^3} - \tfrac{27}{256}a^3 - \tfrac{27}{256}ab^2 = 0 $$
 
-$$ u^6 + \left(\tfrac{11}{192}a^2 + \tfrac{9}{64}b^2\right)^3 + \bigg(-\tfrac{27}{256}a^3 - \tfrac{27}{256}ab^2\bigg)u^3 = 0 $$
+$$ u^6 + \left(\tfrac{9}{64}a^2 + \tfrac{9}{64}b^2\right)^3 + \bigg(-\tfrac{27}{256}a^3 - \tfrac{27}{256}ab^2\bigg)u^3 = 0 $$
 
-$$ u^6 + \bigg(-\tfrac{27}{256}a^3 - \tfrac{27}{256}ab^2\bigg)u^3 + \left(\tfrac{11}{192}a^2 + \tfrac{9}{64}b^2\right)^3 = 0 $$
+$$ u^6 + \bigg(-\tfrac{27}{256}a^3 - \tfrac{27}{256}ab^2\bigg)u^3 + \left(\tfrac{9}{64}a^2 + \tfrac{9}{64}b^2\right)^3 = 0 $$
 
 Use [the quadratic formula](/proofs/quadratic-formula) to solve for $ u^3 $.
 
-$$ u^3 = \frac{-\left(-\tfrac{27}{256}a^3 - \tfrac{27}{256}ab^2\right) \pm \sqrt{(-\tfrac{27}{256}a^3 - \tfrac{27}{256}ab^2)^2 - 4 \left(\tfrac{11}{192}a^2 + \tfrac{9}{64}b^2\right)^3}}{2} $$
+$$ u^3 = \frac{-\left(-\tfrac{27}{256}a^3 - \tfrac{27}{256}ab^2\right) \pm \sqrt{(-\tfrac{27}{256}a^3 - \tfrac{27}{256}ab^2)^2 - 4 \left(\tfrac{9}{64}a^2 + \tfrac{9}{64}b^2\right)^3}}{2} $$
 
-$$ u^3 = \tfrac{1}{2}\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right) \pm \tfrac{1}{2} \sqrt{\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right)^2 - 4 \left(\tfrac{11}{192}a^2 + \tfrac{9}{64}b^2\right)^3} $$
+$$ u^3 = \tfrac{1}{2}\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right) \pm \tfrac{1}{2} \sqrt{\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right)^2 - 4 \left(\tfrac{9}{64}a^2 + \tfrac{9}{64}b^2\right)^3} $$
 
 Take the cube root on both sides to isolate $ u $.
 
-$$ u = \sqrt[3]{\tfrac{1}{2}\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right) \pm \tfrac{1}{2} \sqrt{\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right)^2 - 4 \left(\tfrac{11}{192}a^2 + \tfrac{9}{64}b^2\right)^3}} $$
+$$ u = \sqrt[3]{\tfrac{1}{2}\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right) \pm \tfrac{1}{2} \sqrt{\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right)^2 - 4 \left(\tfrac{9}{64}a^2 + \tfrac{9}{64}b^2\right)^3}} $$
 
 Now substitute $ u $ to solve for $ v $.
 
-$$ v = \frac{\frac{11}{192}a^2 + \frac{9}{64}b^2}{u} = \frac{\frac{11}{192}a^2 + \frac{9}{64}b^2}{\sqrt[3]{\tfrac{1}{2}\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right) \pm \tfrac{1}{2} \sqrt{\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right)^2 - 4 \left(\tfrac{11}{192}a^2 + \tfrac{9}{64}b^2\right)^3}}} $$
+$$ v = \frac{\frac{9}{64}a^2 + \frac{9}{64}b^2}{u} = \frac{\frac{9}{64}a^2 + \frac{9}{64}b^2}{\sqrt[3]{\tfrac{1}{2}\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right) \pm \tfrac{1}{2} \sqrt{\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right)^2 - 4 \left(\tfrac{9}{64}a^2 + \tfrac{9}{64}b^2\right)^3}}} $$
 
 Substiute $ u $ and $ v $ back into $ n $:
 
-$$ n = u + v = \sqrt[3]{\tfrac{1}{2}\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right) \pm \tfrac{1}{2} \sqrt{\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right)^2 - 4 \left(\tfrac{11}{192}a^2 + \tfrac{9}{64}b^2\right)^3}} + \frac{\frac{11}{192}a^2 + \frac{9}{64}b^2}{\sqrt[3]{\tfrac{1}{2}\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right) \pm \tfrac{1}{2} \sqrt{\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right)^2 - 4 \left(\tfrac{11}{192}a^2 + \tfrac{9}{64}b^2\right)^3}}} $$
+$$ n = u + v = \sqrt[3]{\tfrac{1}{2}\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right) \pm \tfrac{1}{2} \sqrt{\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right)^2 - 4 \left(\tfrac{9}{64}a^2 + \tfrac{9}{64}b^2\right)^3}} + \frac{\frac{9}{64}a^2 + \frac{9}{64}b^2}{\sqrt[3]{\tfrac{1}{2}\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right) \pm \tfrac{1}{2} \sqrt{\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right)^2 - 4 \left(\tfrac{9}{64}a^2 + \tfrac{9}{64}b^2\right)^3}}} $$
 
 Finally, substitute $ n $ back into $ c $.
 
 $$ c^3 = n + \tfrac{1}{4}a $$
 
-$$ c = \sqrt[3]{\sqrt[3]{\tfrac{1}{2}\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right) \pm \tfrac{1}{2} \sqrt{\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right)^2 - 4 \left(\tfrac{11}{192}a^2 + \tfrac{9}{64}b^2\right)^3}} + \frac{\frac{11}{192}a^2 + \frac{9}{64}b^2}{\sqrt[3]{\tfrac{1}{2}\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right) \pm \tfrac{1}{2} \sqrt{\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right)^2 - 4 \left(\tfrac{11}{192}a^2 + \tfrac{9}{64}b^2\right)^3}}} + \tfrac{1}{4}a} $$
+$$ c = \sqrt[3]{\sqrt[3]{\tfrac{1}{2}\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right) \pm \tfrac{1}{2} \sqrt{\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right)^2 - 4 \left(\tfrac{9}{64}a^2 + \tfrac{9}{64}b^2\right)^3}} + \frac{\frac{9}{64}a^2 + \frac{9}{64}b^2}{\sqrt[3]{\tfrac{1}{2}\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right) \pm \tfrac{1}{2} \sqrt{\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right)^2 - 4 \left(\tfrac{9}{64}a^2 + \tfrac{9}{64}b^2\right)^3}}} + \tfrac{1}{4}a} $$
 
 Or, shorter:
 
-$$ c = \sqrt[3]{u + \frac{\frac{11}{192}a^2 + \frac{9}{64}b^2}{u} + \tfrac{1}{4}a}, \text{where } u = \sqrt[3]{\tfrac{1}{2}\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right) \pm \tfrac{1}{2} \sqrt{\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right)^2 - 4 \left(\tfrac{11}{192}a^2 + \tfrac{9}{64}b^2\right)^3}} $$
+$$ c = \sqrt[3]{u + \frac{\frac{9}{64}a^2 + \frac{9}{64}b^2}{u} + \tfrac{1}{4}a}, \text{where } u = \sqrt[3]{\tfrac{1}{2}\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right) \pm \tfrac{1}{2} \sqrt{\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right)^2 - 4 \left(\tfrac{9}{64}a^2 + \tfrac{9}{64}b^2\right)^3}} $$
 
 From $ d^2 = \frac{c^3 - a}{3c} $ follows that:
 
@@ -133,7 +133,7 @@ $$
 \begin{aligned}
 d &= \sqrt{\frac{c^3 - a}{3c}} \newline
 &= \sqrt{\frac{u + v + \frac{1}{4}a - a}{3c}} \newline
-&= \sqrt{\frac{u + v - \frac{3}{4}a}{3\sqrt[3]{u + \frac{\frac{11}{192}a^2 + \frac{9}{64}b^2}{u} + \tfrac{1}{4}a}}} \newline
-&, \text{where } u = \sqrt[3]{\tfrac{1}{2}\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right) \pm \tfrac{1}{2} \sqrt{\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right)^2 - 4 \left(\tfrac{11}{192}a^2 + \tfrac{9}{64}b^2\right)^3}}
+&= \sqrt{\frac{u + v - \frac{3}{4}a}{3\sqrt[3]{u + \frac{\frac{9}{64}a^2 + \frac{9}{64}b^2}{u} + \tfrac{1}{4}a}}} \newline
+&, \text{where } u = \sqrt[3]{\tfrac{1}{2}\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right) \pm \tfrac{1}{2} \sqrt{\left(\tfrac{27}{256}a^3 + \tfrac{27}{256}ab^2\right)^2 - 4 \left(\tfrac{9}{64}a^2 + \tfrac{9}{64}b^2\right)^3}}
 \end{aligned}
 $$
