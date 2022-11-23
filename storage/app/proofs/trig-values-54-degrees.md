@@ -2,7 +2,13 @@
 title: Trig values of 54 degrees
 description: This proof shows the exact value of sin(54), cos(54) and tan(54)
 category: geometry
-foundations: [tangent-sine-divided-by-cosine, trig-values-18-degrees, trig-values-36-degrees]
+foundations:
+    [
+        tangent-sine-divided-by-cosine,
+        trig-values-18-degrees,
+        trig-values-36-degrees,
+        sine-cosine-angle-formula
+    ]
 ---
 
 ## Statement
@@ -17,7 +23,7 @@ $$ \tan(54 \degree) = \tfrac15 \sqrt{25 + 10\sqrt5} $$
 
 ## Sine
 
-Use the sum of angles formula for sine:
+Use [the sum of angles formula for sine](/proofs/sine-cosine-angle-formula):
 
 $$ \sin(\alpha + \beta) = \sin(\alpha) \cos(\beta) + \cos(\alpha) \sin(\beta) $$
 
@@ -53,7 +59,7 @@ $$
 
 ## Cosine
 
-Use the sum of angles formula for cosine:
+Use [the sum of angles formula for cosine](/proofs/sine-cosine-angle-formula):
 
 $$ \cos(\alpha + \beta) = \cos(\alpha) \cos(\beta) - \sin(\alpha) \sin(\beta) $$
 

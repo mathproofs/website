@@ -2,7 +2,13 @@
 title: Trig values of 15 degrees
 description: This proof shows the exact value of sin(15), cos(15) and tan(15)
 category: geometry
-foundations: [tangent-sine-divided-by-cosine, trig-values-45-degrees, trig-values-30-60-degrees]
+foundations:
+    [
+        tangent-sine-divided-by-cosine,
+        trig-values-45-degrees,
+        trig-values-30-60-degrees,
+        sine-cosine-angle-formula
+    ]
 ---
 
 ## Statement
@@ -17,7 +23,7 @@ $$ \tan(15 \degree) = \sqrt{7 - 4\sqrt3} $$
 
 ## Sine
 
-Use the difference of angles formula for sine:
+Use [the difference of angles formula for sine](/proofs/sine-cosine-angle-formula):
 
 $$ \sin(\alpha - \beta) = \sin(\alpha) \cos(\beta) - \sin(\beta) \cos(\alpha) $$
 
@@ -50,7 +56,7 @@ $$
 
 ## Cosine
 
-Use the difference of angles formula for cosine:
+Use [the difference of angles formula for cosine](/proofs/sine-cosine-angle-formula):
 
 $$ \cos(\alpha - \beta) = \cos(\alpha) \cos(\beta) + \sin(\alpha) \sin(\beta) $$
 
