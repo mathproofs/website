@@ -9,3 +9,8 @@
 img {
     break-inside: avoid !important;
 }
+
+table {
+    width: 100%;
+    white-space: nowrap;
+}
