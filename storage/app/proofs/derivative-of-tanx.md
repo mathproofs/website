@@ -1,6 +1,6 @@
 ---
-title: Derivative of tanx
-description: This proof shows what the derivative of tanx is.
+title: Derivative of tan(x)
+description: This proof shows what the derivative of tan(x) is.
 category: calculus
 foundations: [tangent-sine-divided-by-cosine, calculus-quotient-rule]
 ---
