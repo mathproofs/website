@@ -1,7 +1,7 @@
 ---
 title: The limit of sin(x) over x
 description: This proof shows that the limit as x goes to zero of sin(x) over x converges to one.
-category: algebra
+category: geometry
 foundations: [tangent-sine-divided-by-cosine]
 ---
 
